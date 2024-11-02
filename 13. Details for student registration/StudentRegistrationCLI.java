@@ -26,7 +26,7 @@ public class StudentRegistrationCLI extends JFrame {
 
         // Seminar combo box
         add(new JLabel("Seminar: "));
-        seminarComboBox = new JComboBox<>(new String[] { "Seminar 1", "Seminar 2", "Seminar 3" });
+        seminarComboBox = new JComboBox<>(new String[] { "Seminar 1", "Seminar 2" });
         add(seminarComboBox);
 
         // Register button
