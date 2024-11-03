@@ -18,12 +18,11 @@ public class WindowEventHandling extends JFrame implements WindowListener {
     @Override
     public void windowOpened(WindowEvent e) {
         System.out.println("Window opened");
-    }
-
+    }   
+    
     @Override
     public void windowClosing(WindowEvent e) {
-        int response = JOptionPane.showConfirmDialog(this, "Are you sure you want to exit?", "Confirm Exit",
-                JOptionPane.YES_NO_OPTION);
+        int response = JOptionPane.showConfirmDialog(this, "Are you sure you want to exit?", "Confirm Exit", JOptionPane.YES_NO_OPTION);
         if (response == JOptionPane.YES_OPTION) {
             System.out.println("Window closing");
             dispose();
