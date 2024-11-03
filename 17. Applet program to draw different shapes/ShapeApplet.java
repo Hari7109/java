@@ -1,5 +1,6 @@
 import java.applet.Applet;
 import java.awt.Graphics;
+import java.awt.Frame;
 
 public class ShapeApplet extends Applet {
 
@@ -18,5 +19,17 @@ public class ShapeApplet extends Applet {
 
         // Draw a filled oval
         g.fillOval(150, 150, 100, 50);
+    }
+
+    public static void main(String[] args) {
+        Frame frame = new Frame("Shape Applet");
+        ShapeApplet applet = new ShapeApplet();
+
+        frame.add(applet);
+        frame.setSize(400, 300);
+        frame.setVisible(true);
+
+        applet.init();
+        applet.start();
     }
 }
