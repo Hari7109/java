@@ -8,7 +8,7 @@ public class SwapValues extends JFrame implements ActionListener {
     private JButton swapButton;
 
     public SwapValues() {
-        // Initialize GUI components
+        // Initialize GUI component
         setTitle("Swap Values");
         setSize(300, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
